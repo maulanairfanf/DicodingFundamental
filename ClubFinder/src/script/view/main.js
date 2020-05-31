@@ -1,3 +1,5 @@
+import DataSource from '../data/data-source.js';
+
 const main = () => {
     const searchElement = document.querySelector("#searchElement");
     const buttonSearchElement = document.querySelector("#searchButtonElement");
@@ -12,7 +14,7 @@ const main = () => {
         }
     };
 
-    const renderResult = results => {
+        const renderResult = results => {
         clubListElement.innerHTML = "";
         results.forEach(club => {
             const {
@@ -41,3 +43,5 @@ const main = () => {
 
     buttonSearchElement.addEventListener("click", onButtonSearchClicked);
 };
+
+export default main;
